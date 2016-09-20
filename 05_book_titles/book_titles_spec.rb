@@ -63,7 +63,7 @@ describe Book do
     describe 'should always capitalize...' do
       specify 'I' do
         @book.title = "what i wish i knew when i was 20"
-        expect(@book.title).to eq("What I Wish I Knew When I Was 20")
+        expect(@book.title).to eq("What I Wish I Knew when I Was 20")
       end
 
       specify 'the first word' do

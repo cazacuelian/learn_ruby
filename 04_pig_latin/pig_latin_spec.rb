@@ -68,5 +68,10 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
-
+  
+  it "capitalized words are still capitalized" do
+    s = translate("The Wolf of Wall Street, a great movie. Town Square;")
+    expect(s).to eq("Ethay Olfway ofay Allway Eetstray, aay eatgray oviemay. Owntay Aresquay;")
+  end
+  
 end
